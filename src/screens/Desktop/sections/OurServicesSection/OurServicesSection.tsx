@@ -27,61 +27,61 @@ export const OurServicesSection: React.FC = () => {
   return (
     <section
       id="services"
-      className="relative w-full py-16 sm:py-20 md:py-28 bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white overflow-hidden"
+      className="relative w-full py-16 sm:py-20 md:py-28 text-white overflow-hidden"
+      style={{
+        backgroundImage: "url('/untitled-design--20--1.png')",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat"
+      }}
     >
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/untitled-design--20--1.png"
-          alt="Luxury hotel background"
-          className="w-full h-full object-cover opacity-60 scale-105 animate-slow-pan"
-        />
-        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-      </div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
         {/* Header */}
         <div className="flex flex-col items-center mb-14 sm:mb-16 md:mb-20 opacity-0 animate-fade-in">
           <div className="inline-flex items-center gap-3 sm:gap-4 mb-4">
-            <div className="w-14 h-px bg-gradient-to-r from-[#d4af37] to-[#ffcf73]" />
-            <span className="tracking-[0.25em] text-sm font-semibold text-[#ffcf73] uppercase">
+            <div className="w-14 h-px bg-gradient-to-r from-accent-gold to-accent-gold-light" />
+            <span className="tracking-[0.25em] text-sm font-semibold text-accent-gold-light uppercase">
               Our Services
             </span>
-            <div className="w-14 h-px bg-gradient-to-l from-[#d4af37] to-[#ffcf73]" />
+            <div className="w-14 h-px bg-gradient-to-l from-accent-gold to-accent-gold-light" />
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug max-w-4xl">
             Elevating{" "}
-            <span className="bg-gradient-to-r from-[#d4af37] to-[#ffcf73] bg-clip-text text-transparent italic">
+            <span className="text-primary-1 bg-clip-text  italic">
               hospitality standards
             </span>{" "}
             through tailored consultancy
           </h2>
 
-          <p className="text-gray-300 mt-5 text-base sm:text-lg max-w-2xl leading-relaxed">
+          <p className="text-white mt-5 text-base sm:text-lg max-w-2xl leading-relaxed">
             Empowering hotels and resorts with strategic insights, operational
             excellence, and innovative guest experience design.
           </p>
         </div>
 
         {/* Cards Section */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-10 w-full px-4">
+        <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 sm:gap-8 md:gap-10 w-full px-4">
           {serviceCards.map((service, index) => (
             <div
               key={index}
-              className="group relative w-full max-w-[380px] md:max-w-[400px] lg:max-w-[420px] opacity-0 animate-fade-in-up"
+              className="group relative w-full md:w-1/3 opacity-0 animate-fade-in-up"
               style={{ animationDelay: `${index * 200 + 400}ms` }}
             >
               {/* Gradient Glow */}
-              <div className="absolute -inset-[1px] bg-gradient-to-r from-[#d4af37] via-[#ffcf73] to-[#d4af37] rounded-2xl blur-sm opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-[1px] bg-gradient-to-r from-primary-1 via-accent-gold-light to-primary-1 rounded-2xl blur-sm opacity-0 transition duration-500"></div>
 
               {/* Card */}
-              <div className="relative bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 p-8 text-center">
-                <h3 className="text-lg sm:text-xl font-semibold uppercase mb-3 text-[#ffcf73] tracking-wide">
+              <div className="relative h-full bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl shadow-lg transition-all duration-300 p-8 text-center group-hover:scale-105">
+                <h3 className="text-lg sm:text-xl font-semibold uppercase mb-3 text-primary-1 tracking-wide">
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                <p className="text-sm sm:text-base text-white leading-relaxed">
                   {service.description}
                 </p>
               </div>

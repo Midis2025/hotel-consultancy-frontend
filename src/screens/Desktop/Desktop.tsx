@@ -6,6 +6,7 @@ import { MainContentSection } from "./sections/MainContentSection";
 import { NavigationBarSection } from "./sections/NavigationBarSection";
 import { OurServicesSection } from "./sections/OurServicesSection";
 import { PortfolioSection } from "./sections/PortfolioSection";
+import { TestimonialsSection } from "./sections/TestimonialsSection/TestimonialsSection";
 
 export const Desktop = (): JSX.Element => {
   return (
@@ -16,6 +17,7 @@ export const Desktop = (): JSX.Element => {
       <AboutUsSection />
       <OurServicesSection />
       <PortfolioSection />
+      <TestimonialsSection />
       <ContactFooterSection />
     </div>
   );

@@ -56,13 +56,32 @@
   --label-2-font-weight: 600;
   --label-2-letter-spacing: 0px;
   --label-2-line-height: 16px;
+  /* Brand Colors */
+  --primary-1: rgba(153, 104, 48, 1);
+  --primary-3: rgba(229, 215, 203, 1);
+
+  /* Accent Colors - Gold/Luxury */
+  --accent-gold: rgba(212, 175, 55, 1);
+  --accent-gold-light: rgba(255, 207, 115, 1);
+
+  /* Neutral Colors */
   --neutral-1: rgba(44, 44, 44, 1);
   --neutral-2: rgba(86, 86, 86, 1);
   --neutral-3: rgba(132, 132, 132, 1);
   --neutral-4: rgba(217, 217, 217, 1);
-  --primary-1: rgba(153, 104, 48, 1);
-  --primary-3: rgba(229, 215, 203, 1);
+
+  /* Text Colors */
+  --text-heading: rgba(67, 67, 67, 1);
+
+  /* Background Colors */
+  --bg-light: rgba(249, 249, 249, 1);
+  --bg-warm: rgba(255, 250, 247, 1);
+  --bg-dark: rgba(15, 15, 15, 1);
+  --bg-dark-secondary: rgba(26, 26, 26, 1);
+
+  /* Base Colors */
   --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
 }
 
 :root {

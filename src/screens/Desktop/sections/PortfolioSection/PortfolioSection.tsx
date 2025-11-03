@@ -43,7 +43,7 @@ export const PortfolioSection = (): JSX.Element => {
   return (
     <section
       id="portfolio"
-      className="relative w-full py-28 px-6 md:px-16 lg:px-28 bg-[#fffaf7] scroll-mt-20"
+      className="relative w-full py-28 px-6 md:px-16 lg:px-28 bg-bg-warm scroll-mt-20"
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-center gap-20 lg:gap-32">
         {/* Left Column */}
@@ -66,7 +66,7 @@ export const PortfolioSection = (): JSX.Element => {
               </div>
             </div>
 
-            <h2 className="font-heading-3 text-[#434343] text-4xl md:text-5xl leading-tight">
+            <h2 className="font-heading-3 text-text-heading text-4xl md:text-5xl leading-tight">
               Some of <span className="italic text-primary-1">our crafts</span>{" "}
               made with love
             </h2>
@@ -88,7 +88,7 @@ export const PortfolioSection = (): JSX.Element => {
                 src={leftItem.image}
               />
               <div className="flex flex-col gap-4">
-                <h3 className="text-[#434343] text-2xl md:text-3xl font-semibold">
+                <h3 className="text-text-heading text-2xl md:text-3xl font-semibold">
                   {leftItem.title}
                 </h3>
                 <p className="text-neutral-600 text-base leading-relaxed">
@@ -132,7 +132,7 @@ export const PortfolioSection = (): JSX.Element => {
                 src={item.image}
               />
               <div className="flex flex-col gap-4">
-                <h3 className="text-[#434343] text-2xl md:text-3xl font-semibold">
+                <h3 className="text-text-heading text-2xl md:text-3xl font-semibold">
                   {item.title}
                 </h3>
                 <p className="text-neutral-600 text-base leading-relaxed">

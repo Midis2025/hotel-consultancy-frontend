@@ -5,7 +5,7 @@ export const AboutUsSection = (): JSX.Element => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center py-16 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 w-full scroll-mt-20 bg-[#f9f9f9]"
+      className="flex flex-col items-center py-16 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 w-full scroll-mt-20 bg-bg-light"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 w-full max-w-7xl">
         {/* Left Content */}
@@ -27,7 +27,7 @@ export const AboutUsSection = (): JSX.Element => {
             </div>
           </div>
 
-          <h2 className="font-heading-3 text-[#434343] text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug sm:leading-tight max-w-xl">
+          <h2 className="font-heading-3 text-text-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug sm:leading-tight max-w-xl">
             We help turn your{" "}
             <span className="italic text-primary-1">hospitality</span>{" "}
             vision into reality

@@ -135,7 +135,7 @@ export const ContactFooterSection = (): JSX.Element => {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-start gap-6 flex-1"
           >
-            <h2 className="font-heading-3 text-[#434343] text-3xl md:text-4xl leading-tight">
+            <h2 className="font-heading-3 text-text-heading text-3xl md:text-4xl leading-tight">
               Kick-start your dream hospitality project with us
             </h2>
 
@@ -258,8 +258,8 @@ export const ContactFooterSection = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row items-center gap-8 w-full">
           <p className="flex items-center justify-center flex-1 font-body-1 text-neutral-2 text-base">
-            <span className="text-neutral-2">© 2025 Inteo. Template by </span>
-            <span className="text-primary-1 ml-1">Framerize</span>
+            <span className="text-neutral-2">© 2025  </span>
+            <span className="text-primary-1 ml-1">Midis Pvt Ltd.</span>
           </p>
 
           <div className="items-center justify-end gap-6 flex-1 flex">

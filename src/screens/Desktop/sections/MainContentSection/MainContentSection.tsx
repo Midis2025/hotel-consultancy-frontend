@@ -53,7 +53,7 @@ export const MainContentSection = (): JSX.Element => {
                     />
                   </motion.div>
 
-                  <h3 className="font-label-1 text-[#434343] text-base tracking-wider leading-8 mb-6">
+                  <h3 className="font-label-1 text-text-heading text-base tracking-wider leading-8 mb-6">
                     {feature.title}
                   </h3>
 

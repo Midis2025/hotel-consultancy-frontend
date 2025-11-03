@@ -37,7 +37,7 @@ export const NavigationBarSection = (): JSX.Element => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-black/60 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled ? "bg-black backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between max-w-[1216px] mx-auto px-4 sm:px-6 md:px-8 py-4">
