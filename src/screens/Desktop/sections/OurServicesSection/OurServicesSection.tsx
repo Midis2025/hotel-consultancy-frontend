@@ -37,7 +37,7 @@ export const OurServicesSection: React.FC = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm z-0"></div>
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-md z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
@@ -77,7 +77,7 @@ export const OurServicesSection: React.FC = () => {
               <div className="absolute -inset-[1px] bg-gradient-to-r from-primary-1 via-accent-gold-light to-primary-1 rounded-2xl blur-sm opacity-0 transition duration-500"></div>
 
               {/* Card */}
-              <div className="relative h-full bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl shadow-lg transition-all duration-300 p-8 text-center group-hover:scale-105">
+              <div className="relative h-full bg-black/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg transition-all duration-300 p-8 text-center group-hover:scale-105">
                 <h3 className="text-lg sm:text-xl font-semibold uppercase mb-3 text-primary-1 tracking-wide">
                   {service.title}
                 </h3>

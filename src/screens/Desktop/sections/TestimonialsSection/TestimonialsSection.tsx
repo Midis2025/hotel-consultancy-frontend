@@ -28,7 +28,7 @@ const testimonials = [
 
 export const TestimonialsSection = (): JSX.Element => {
   return (
-    <section className="relative w-full  bg-bg-warm">
+    <section className="relative w-full mb-4  bg-bg-warm">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Header */}
         <motion.div

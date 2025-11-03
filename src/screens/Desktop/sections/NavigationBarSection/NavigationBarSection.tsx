@@ -16,7 +16,11 @@ const scrollToSection = (href: string) => {
   }
 };
 
-export const NavigationBarSection = (): JSX.Element => {
+interface NavigationBarSectionProps {
+  onContactClick?: () => void;
+}
+
+export const NavigationBarSection = ({ onContactClick }: NavigationBarSectionProps): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -37,7 +41,7 @@ export const NavigationBarSection = (): JSX.Element => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-black backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled ? "bg-black shadow-md border-b border-white/10" : "bg-black/40 backdrop-blur-lg border-b border-white/10"
       }`}
     >
       <div className="flex items-center justify-between max-w-[1216px] mx-auto px-4 sm:px-6 md:px-8 py-4">
@@ -64,7 +68,7 @@ export const NavigationBarSection = (): JSX.Element => {
           ))}
 
           <Button
-            onClick={() => scrollToSection("#contact")}
+            onClick={onContactClick}
             className="h-auto justify-center px-5 py-3 border border-white text-white bg-transparent hover:bg-white hover:text-black transition-all hover:shadow-lg text-sm lg:text-base"
           >
             CONTACT US
@@ -91,7 +95,7 @@ export const NavigationBarSection = (): JSX.Element => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-black/90 backdrop-blur-md border-t border-neutral-800 shadow-lg"
+            className="md:hidden bg-black/90 backdrop-blur-xl border-t border-neutral-800 shadow-lg"
           >
             <div className="flex flex-col items-center gap-4 py-6">
               {navigationItems.map((item, index) => (
@@ -109,7 +113,7 @@ export const NavigationBarSection = (): JSX.Element => {
 
               <Button
                 onClick={() => {
-                  scrollToSection("#contact");
+                  onContactClick?.();
                   closeMenu();
                 }}
                 className="px-8 py-3 border border-white text-white bg-transparent hover:bg-white hover:text-black transition-all text-base"

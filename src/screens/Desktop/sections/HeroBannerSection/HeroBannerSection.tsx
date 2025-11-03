@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const HeroBannerSection = (): JSX.Element => {
+interface HeroBannerSectionProps {
+  onGetInTouchClick?: () => void;
+}
+
+export const HeroBannerSection = ({ onGetInTouchClick }: HeroBannerSectionProps): JSX.Element => {
   return (
     <section className="relative flex flex-col items-center justify-center w-full min-h-[100vh] overflow-hidden bg-black">
       {/* Background Video */}
@@ -31,7 +35,8 @@ export const HeroBannerSection = (): JSX.Element => {
             tracking-tight"
         >
           Where{" "}
-          <span className="italic text-primary-1">hospitality</span>{" "}
+          <span className="italic text-primary-1 indent-4">hospitality</span>
+          <span className="inline-block w-8"></span>
           meets excellence
         </motion.h1>
 
@@ -53,7 +58,8 @@ export const HeroBannerSection = (): JSX.Element => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-4 sm:mt-6 px-6 sm:px-8 py-3 sm:py-4 bg-primary-1 text-white text-sm sm:text-base md:text-lg font-semibold rounded-lg hover:opacity-90 transition-all"
+          onClick={onGetInTouchClick}
+          className="mt-4 sm:mt-6 px-6 sm:px-8 py-3 sm:py-4 bg-primary-1 text-white text-sm sm:text-base md:text-lg font-semibold rounded-lg hover:opacity-90 transition-all cursor-pointer"
         >
           Get in Touch
         </motion.button>
