@@ -80,6 +80,20 @@ export const ContactFooterSection = (): JSX.Element => {
                 </div>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mt-8"
+            >
+              <img
+                className="h-60 object-contain"
+                alt="Aureus Hospitality Logo"
+                src="/logo1.png"
+              />
+            </motion.div>
           </motion.div>
 
           <motion.div

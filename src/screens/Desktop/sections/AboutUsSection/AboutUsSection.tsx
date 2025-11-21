@@ -55,7 +55,7 @@ export const AboutUsSection = (): JSX.Element => {
               transition={{ duration: 0.3 }}
               className="absolute w-[70%] sm:w-[60%] md:w-[50%] lg:w-[47%] h-[70%] sm:h-[80%] md:h-[85%] top-0 left-0 object-cover rounded-xl shadow-xl"
               alt="Hotel interior"
-              src="/image-1.png"
+              src="/4.jpg"
             />
 
             {/* Overlay Image */}
@@ -64,7 +64,7 @@ export const AboutUsSection = (): JSX.Element => {
               transition={{ duration: 0.3 }}
               className="absolute w-[70%] sm:w-[60%] md:w-[50%] lg:w-[47%] h-[70%] sm:h-[80%] md:h-[85%] top-[22%] sm:top-[16%] md:top-[14%] left-[25%] sm:left-[35%] md:left-[50%] object-cover rounded-xl shadow-xl"
               alt="Hotel team"
-              src="/image.png"
+              src="/5.jpg"
             />
           </div>
         </motion.div>

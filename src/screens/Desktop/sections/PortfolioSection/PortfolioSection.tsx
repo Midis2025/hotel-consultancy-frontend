@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const portfolioItems = [
   {
     id: 1,
-    image: "/image-3.png",
+    image: "/1.jpg",
     title: "Boutique Resort Transformation",
     description:
       "From service redesign to revenue growth, we helped a coastal boutique hotel achieve exceptional guest loyalty scores.",
@@ -13,7 +13,7 @@ const portfolioItems = [
   },
   {
     id: 2,
-    image: "/image-4.png",
+    image: "/2.jpg",
     title: "Luxury Urban Hotel Revitalization",
     description:
       "A major city property partnered with us to revamp guest experience and boost brand reputation, resulting in award-winning reviews.",
@@ -21,7 +21,7 @@ const portfolioItems = [
   },
   {
     id: 3,
-    image: "/image-5.jpg",
+    image: "/3.jpg",
     title: "Mountain Retreat Rebranding",
     description:
       "We repositioned a serene mountain resort with a refreshed visual identity and enhanced guest experiences that elevated its brand appeal.",
