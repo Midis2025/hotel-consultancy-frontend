@@ -1,0 +1,28 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Crown -->
+  <path d="M100 10 L120 40 L140 30 L130 50 L150 60 L130 65 L120 85 L100 70 L80 85 L70 65 L50 60 L70 50 L60 30 L80 40 Z" fill="#D4AF37"/>
+  
+  <!-- Laurel wreaths -->
+  <g>
+    <!-- Left wreath -->
+    <path d="M40 80 Q30 90 35 110 Q40 130 50 140" stroke="#D4AF37" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="35" cy="85" r="2.5" fill="#D4AF37"/>
+    <circle cx="32" cy="95" r="2.5" fill="#D4AF37"/>
+    <circle cx="35" cy="105" r="2.5" fill="#D4AF37"/>
+    <circle cx="42" cy="115" r="2.5" fill="#D4AF37"/>
+    <circle cx="50" cy="125" r="2.5" fill="#D4AF37"/>
+    <circle cx="58" cy="135" r="2.5" fill="#D4AF37"/>
+    
+    <!-- Right wreath -->
+    <path d="M160 80 Q170 90 165 110 Q160 130 150 140" stroke="#D4AF37" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="165" cy="85" r="2.5" fill="#D4AF37"/>
+    <circle cx="168" cy="95" r="2.5" fill="#D4AF37"/>
+    <circle cx="165" cy="105" r="2.5" fill="#D4AF37"/>
+    <circle cx="158" cy="115" r="2.5" fill="#D4AF37"/>
+    <circle cx="150" cy="125" r="2.5" fill="#D4AF37"/>
+    <circle cx="142" cy="135" r="2.5" fill="#D4AF37"/>
+  </g>
+  
+  <!-- Letter A -->
+  <text x="100" y="110" font-size="70" font-weight="bold" text-anchor="middle" fill="#D4AF37" font-family="serif">A</text>
+</svg>

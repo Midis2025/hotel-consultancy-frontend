@@ -47,9 +47,9 @@ export const NavigationBarSection = ({ onContactClick }: NavigationBarSectionPro
       <div className="flex items-center justify-between max-w-[1216px] mx-auto px-4 sm:px-6 md:px-8 py-4">
         {/* Logo */}
         <img
-          className="w-[90px] sm:w-[100px] h-12 sm:h-14 cursor-pointer brightness-0 invert"
-          alt="Elegant simple"
-          src="/elegant-simple-aesthetic-real-estate-logo-1.png"
+          className="w-[90px] sm:w-[100px] h-12 sm:h-14 cursor-pointer object-contain"
+          alt="Aureus Hospitality"
+          src="/logo.png"
           onClick={() => scrollToSection("#hero")}
         />
 
