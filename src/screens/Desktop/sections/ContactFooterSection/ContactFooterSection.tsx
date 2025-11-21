@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import { ContactFormSlider } from "../../../../components/ContactFormSlider";
 
 interface SeparatorProps {
   className?: string;
@@ -17,14 +18,6 @@ interface ContactInfo {
 interface SocialIcon {
   src: string;
   alt: string;
-}
-
-interface FormData {
-  firstName: string;
-  lastName: string;
-  email: string;
-  subject: string;
-  message: string;
 }
 
 const contactInfoData: ContactInfo[] = [
@@ -50,74 +43,6 @@ const socialIcons: SocialIcon[] = [
 ];
 
 export const ContactFooterSection = (): JSX.Element => {
-  const [formData, setFormData] = useState<FormData>({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ): void => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (): Promise<void> => {
-    if (!formData.firstName || !formData.email || !formData.message) {
-      alert("Please fill in all required fields (First name, Email, Message).");
-      return;
-    }
-
-    try {
-      setLoading(true);
-
-      const response = await fetch(
-        "https://authentic-butterfly-cae2bbac6b.strapiapp.com/api/Contact-uses",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            data: {
-              firstName: formData.firstName,
-              lastName: formData.lastName,
-              email: formData.email,
-              subject: formData.subject,
-              message: formData.message,
-            },
-          }),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to submit the form.");
-      }
-
-      const result = await response.json();
-      console.log("Form submitted successfully:", result);
-
-      alert("Thank you for your message! We'll get back to you soon.");
-
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Something went wrong. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <footer
@@ -164,93 +89,7 @@ export const ContactFooterSection = (): JSX.Element => {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-start gap-6 flex-1 w-full"
           >
-            <div className="w-full space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex flex-col gap-2">
-                  <label className="font-body-2 text-neutral-2 text-sm">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    className="px-4 py-3 border border-neutral-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-1 focus:border-transparent transition-all"
-                    placeholder="John"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label className="font-body-2 text-neutral-2 text-sm">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    className="px-4 py-3 border border-neutral-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-1 focus:border-transparent transition-all"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label className="font-body-2 text-neutral-2 text-sm">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="px-4 py-3 border border-neutral-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-1 focus:border-transparent transition-all"
-                  placeholder="john.doe@example.com"
-                />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label className="font-body-2 text-neutral-2 text-sm">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="px-4 py-3 border border-neutral-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-1 focus:border-transparent transition-all"
-                  placeholder="Project inquiry"
-                />
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <label className="font-body-2 text-neutral-2 text-sm">
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={5}
-                  className="px-4 py-3 border border-neutral-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-1 focus:border-transparent transition-all resize-none"
-                  placeholder="Tell us about your project..."
-                />
-              </div>
-
-              <motion.button
-                whileHover={{ scale: !loading ? 1.02 : 1 }}
-                whileTap={{ scale: !loading ? 0.98 : 1 }}
-                onClick={!loading ? handleSubmit : undefined}
-                disabled={loading}
-                className={`w-full px-6 py-4 text-white text-[length:var(--label-2-font-size)] text-center leading-[var(--label-2-line-height)] font-label-2 rounded-lg transition-opacity shadow-lg cursor-pointer ${
-                  loading
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-primary-1 hover:opacity-90"
-                }`}
-              >
-                {loading ? "Sending..." : "Send Message"}
-              </motion.button>
-            </div>
+            <ContactFormSlider isOpen={true} onClose={() => {}} inline={true} />
           </motion.div>
         </div>
 
@@ -259,7 +98,7 @@ export const ContactFooterSection = (): JSX.Element => {
         <div className="flex flex-col md:flex-row items-center gap-8 w-full">
           <p className="flex items-center justify-center flex-1 font-body-1 text-neutral-2 text-base">
             <span className="text-neutral-2">© 2025  </span>
-            <span className="text-primary-1 ml-1">Midis Pvt Ltd.</span>
+            <span className="text-primary-1 ml-1">Aureus Hospitality</span>
           </p>
 
           <div className="items-center justify-end gap-6 flex-1 flex">
