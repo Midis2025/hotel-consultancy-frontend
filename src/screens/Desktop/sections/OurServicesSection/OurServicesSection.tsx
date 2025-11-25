@@ -7,19 +7,19 @@ interface ServiceCard {
 
 const serviceCards: ServiceCard[] = [
   {
-    title: "OPERATIONS & SERVICE EXCELLENCE AUDITS",
+    title: "Operations & Service Excellence Audits",
     description:
-      "Comprehensive evaluations of hotel operations to enhance guest satisfaction, improve team performance, and streamline service delivery across all departments.",
+      "In-depth evaluations of hotel operations that enhance guest satisfaction, optimize team performance, and streamline service delivery across all departments.",
   },
   {
-    title: "REVENUE & PERFORMANCE OPTIMIZATION",
+    title: "Revenue & Performance Optimization",
     description:
-      "Data-driven strategies to maximize occupancy, increase RevPAR, and refine pricing models through competitive market analysis and forecasting insights.",
+      "Data-driven strategies to maximize occupancy, boost RevPAR, and refine pricing models using market intelligence, competitive analysis, and predictive forecasting.",
   },
   {
-    title: "BRAND EXPERIENCE & GUEST JOURNEY DESIGN",
+    title: "Brand Experience & Guest Journey Design",
     description:
-      "Crafting distinctive guest experiences through brand alignment, service touchpoint mapping, and emotional engagement strategies that drive loyalty.",
+      "Designing distinctive, emotionally engaging guest experiences through brand alignment, service touchpoint mapping, and immersive journey strategies that foster loyalty and lasting impact.",
   },
 ];
 
@@ -41,6 +41,7 @@ export const OurServicesSection: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-center flex flex-col items-center">
+        
         {/* Header */}
         <div className="flex flex-col items-center mb-14 sm:mb-16 md:mb-20 opacity-0 animate-fade-in">
           <div className="inline-flex items-center gap-3 sm:gap-4 mb-4">
@@ -53,15 +54,14 @@ export const OurServicesSection: React.FC = () => {
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug max-w-4xl">
             Elevating{" "}
-            <span className="text-primary-1 bg-clip-text  italic">
+            <span className="text-primary-1 bg-clip-text italic">
               hospitality standards
             </span>{" "}
             through tailored consultancy
           </h2>
 
           <p className="text-white mt-5 text-base sm:text-lg max-w-2xl leading-relaxed">
-            Empowering hotels and resorts with strategic insights, operational
-            excellence, and innovative guest experience design.
+    We empower hotels and resorts with strategic insights, operational excellence, and innovative guest experience design—turning every stay into a memorable, brand-defining moment. 
           </p>
         </div>
 
@@ -110,5 +110,7 @@ export const OurServicesSection: React.FC = () => {
         .animate-slow-pan { animation: slow-pan 20s ease-in-out infinite; }
       `}</style>
     </section>
+
+    
   );
 };

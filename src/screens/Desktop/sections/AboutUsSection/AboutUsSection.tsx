@@ -8,6 +8,7 @@ export const AboutUsSection = (): JSX.Element => {
       className="flex flex-col items-center py-16 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 w-full scroll-mt-20 bg-bg-light"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 w-full max-w-7xl">
+        
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -28,15 +29,17 @@ export const AboutUsSection = (): JSX.Element => {
           </div>
 
           <h2 className="font-heading-3 text-text-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug sm:leading-tight max-w-xl">
-            We help turn your{" "}
-            <span className="italic text-primary-1">hospitality</span>{" "}
-            vision into reality
+            About Us – Turning{" "}
+            <span className="italic text-primary-1">Hospitality Vision</span>{" "}
+            into Reality
           </h2>
 
           <p className="font-body-1 text-neutral-2 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
-            As a trusted partner to hotels and resorts worldwide, we blend
-            insight, creativity, and operational discipline. Each project is
-            shaped by collaboration, transparency, and a focus on results.
+           Aureus Hospitality partners with hotels and resorts worldwide to transform ambition into exceptional guest experiences. By combining deep industry insight, creative strategies, and operational precision, we deliver solutions that are practical, measurable, and memorable
+          </p>
+
+          <p className="font-body-1 text-neutral-2 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
+           Every project is guided by collaboration, transparency, and a relentless focus on results—helping your property exceed expectations at every touchpoint. 
           </p>
         </motion.div>
 
@@ -49,6 +52,7 @@ export const AboutUsSection = (): JSX.Element => {
           className="relative w-full md:w-1/2 flex justify-center"
         >
           <div className="relative w-full h-[260px] sm:h-[360px] md:h-[480px] lg:h-[560px] flex justify-center items-center">
+            
             {/* Background Image */}
             <motion.img
               whileHover={{ scale: 1.05 }}
@@ -62,12 +66,16 @@ export const AboutUsSection = (): JSX.Element => {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              className="absolute w-[70%] sm:w-[60%] md:w-[50%] lg:w-[47%] h-[70%] sm:h-[80%] md:h-[85%] top-[22%] sm:top-[16%] md:top-[14%] left-[25%] sm:left-[35%] md:left-[50%] object-cover rounded-xl shadow-xl"
+              className="absolute w-[70%] sm:w-[60%] md:w-[50%] lg:w-[47%] h-[70%] sm:h-[80%] md:h-[85%] 
+              top-[22%] sm:top-[16%] md:top-[14%] 
+              left-[25%] sm:left-[35%] md:left-[50%] object-cover 
+              rounded-xl shadow-xl"
               alt="Hotel team"
               src="/5.jpg"
             />
           </div>
         </motion.div>
+        
       </div>
     </section>
   );
