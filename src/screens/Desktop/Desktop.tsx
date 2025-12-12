@@ -7,8 +7,9 @@ import { NavigationBarSection } from "./sections/NavigationBarSection";
 import { OurServicesSection } from "./sections/OurServicesSection";
 import { LeadershipSection } from "./sections/LeadershipSection";
 
-import { PortfolioSection } from "./sections/PortfolioSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection/TestimonialsSection";
+// import { PortfolioSection } from "./sections/PortfolioSection";
+import { SignatureSolutions } from "./sections/SignatureSolutions";
+import { ExpertiseSection } from "./sections/ExpertiseSection";
 import { ContactFormSlider } from "../../components/ContactFormSlider";
 
 export const Desktop = (): JSX.Element => {
@@ -25,8 +26,9 @@ export const Desktop = (): JSX.Element => {
       <AboutUsSection />
       <OurServicesSection />
         <LeadershipSection />
-      <PortfolioSection />
-      <TestimonialsSection />
+      {/* <PortfolioSection /> */}
+      <SignatureSolutions />
+      <ExpertiseSection />
       <ContactFooterSection />
       <ContactFormSlider isOpen={isContactFormOpen} onClose={closeContactForm} />
     </div>

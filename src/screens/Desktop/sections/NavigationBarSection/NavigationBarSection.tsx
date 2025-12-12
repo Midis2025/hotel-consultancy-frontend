@@ -6,7 +6,9 @@ import { Menu, X } from "lucide-react";
 const navigationItems = [
   { label: "ABOUT", href: "#about" },
   { label: "SERVICES", href: "#services" },
-  { label: "PORTFOLIO", href: "#portfolio" },
+  // { label: "PORTFOLIO", href: "#portfolio" },
+  { label: "SIGNATURE SOLUTIONS", href: "#solutions" },
+  { label: "EXPERTISE", href: "#expertise" },
 ];
 
 const scrollToSection = (href: string) => {
