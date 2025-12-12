@@ -10,24 +10,24 @@ interface SolutionCard {
 const solutions: SolutionCard[] = [
   {
     id: 1,
-    title: "Operational Diagnostics & Roadmaps",
+    title: "Operational Excellence & Performance Improvement",
     summary: "Deep operational audit and a clear action roadmap.",
     detail:
-      "Comprehensive assessment of front- and back-of-house operations, SOP alignment, and a prioritized execution plan to reduce waste and accelerate service quality improvements.",
+      "We refine hotel operations by optimizing workflows, reducing inefficiencies, and strengthening service delivery across all guest touchpoints.",
   },
   {
     id: 2,
-    title: "Revenue Strategy & Distribution",
-    summary: "Data-led pricing and channel management.",
+    title: "Revenue Growth & Market Strategy",
+    summary: "We develop data-driven pricing, competitive positioning, and distribution strategies that maximise occupancy, increase RevPAR, and strengthen overall market presence.",
     detail:
-      "Dynamic pricing frameworks, distribution optimization, and channel-mix strategies to increase RevPAR and reduce dependency on discounting.",
+      "We develop data-driven pricing, competitive positioning, and distribution strategies that maximise occupancy, increase RevPAR, and strengthen overall market presence.",
   },
   {
     id: 3,
-    title: "Pre-Opening & Concept Development",
-    summary: "End-to-end pre-opening readiness and concept tuning.",
+    title: "Guest Experience & Service Design",
+    summary: "We elevate guest satisfaction through experience mapping, service refinement, and staff training programs that deliver exceptional hospitality at every interaction.",
     detail:
-      "Concept validation, operational setup, recruitment roadmaps, and checklist-driven pre-opening systems to ensure a smooth, on-budget launch.",
+      "We elevate guest satisfaction through experience mapping, service refinement, and staff training programs that deliver exceptional hospitality at every interaction.",
   },
   {
     id: 4,
@@ -122,7 +122,7 @@ export const SignatureSolutions = (): JSX.Element => {
                 className="relative w-full h-64 sm:h-72 rounded-2xl overflow-hidden shadow-lg border border-neutral-4"
               > 
                 <img
-                  src="/images/1.jpg"
+                  src="/images/1.png"
                   alt={solutions[0].title}
                   className="w-full h-full object-cover"
                 />
@@ -176,7 +176,7 @@ export const SignatureSolutions = (): JSX.Element => {
                 className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden shadow-lg border border-neutral-4"
               >
                 <img
-                  src="/images/2.jpg"
+                  src="/images/2.png"
                   alt={solutions[1].title}
                   className="w-full h-full object-cover"
                 />
@@ -199,7 +199,7 @@ export const SignatureSolutions = (): JSX.Element => {
                 className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden shadow-lg border border-neutral-4"
               >
                 <img
-                  src="/images/3.jpg"
+                  src="/images/3.png"
                   alt={solutions[2].title}
                   className="w-full h-full object-cover"
                 />
