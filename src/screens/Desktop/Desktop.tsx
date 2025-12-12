@@ -9,7 +9,7 @@ import { LeadershipSection } from "./sections/LeadershipSection";
 
 // import { PortfolioSection } from "./sections/PortfolioSection";
 import { SignatureSolutions } from "./sections/SignatureSolutions";
-import { ExpertiseSection } from "./sections/ExpertiseSection";
+import { WhyHotelsSection } from "./sections/WhyHotelsSection";
 import { ContactFormSlider } from "../../components/ContactFormSlider";
 
 export const Desktop = (): JSX.Element => {
@@ -28,7 +28,7 @@ export const Desktop = (): JSX.Element => {
         <LeadershipSection />
       {/* <PortfolioSection /> */}
       <SignatureSolutions />
-      <ExpertiseSection />
+      <WhyHotelsSection />
       <ContactFooterSection />
       <ContactFormSlider isOpen={isContactFormOpen} onClose={closeContactForm} />
     </div>

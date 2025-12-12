@@ -1,0 +1,1 @@
+export { WhyHotelsSection } from "./WhyHotelsSection";

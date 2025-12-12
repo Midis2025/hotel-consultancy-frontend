@@ -10,9 +10,43 @@ Comprehensive redesign of the website's section layout, specifically replacing t
 
 ---
 
-## Major Changes
+## **New Section Added: "Why Hotels Trust Us"**
 
-### 1. **Section Removal**
+**File:** `/src/screens/Desktop/sections/WhyHotelsSection/WhyHotelsSection.tsx`
+
+**Purpose:** Display client testimonials in an interactive carousel format showcasing why hotels trust Aureus Hospitality
+
+**Features:**
+- **Carousel Component:** Uses CircularTestimonials component (same as testimonials page)
+- **6 Client Testimonials** with:
+  - Client quote/testimonial text
+  - Client name and designation
+  - 5-star rating
+  - Date of testimonial
+  - Client image (uses placeholder images from `/images/` folder)
+- **Autoplay Functionality:** Carousel automatically cycles through testimonials every 2.5 seconds
+- **Navigation Controls:**
+  - Previous/Next arrow buttons
+  - Indicator dots for direct testimonial selection
+  - Keyboard navigation support (arrow keys)
+- **Hover Effects:**
+  - Scale animations on images (1.02)
+  - Button hover states with enhanced shadows
+  - Smooth transitions
+- **Responsive Design:**
+  - Single column on mobile
+  - Grid layout adjusts for tablets and desktops
+  - Full-width container with max-width constraint
+
+**Design System Compliance:**
+- Colors: primary-1 (#996830), text-heading (#434343), neutral tones
+- Typography: Matching existing design system
+- Animations: Framer-motion scroll-triggered entrance
+- Spacing: Consistent with other sections
+
+---
+
+
 - ❌ **Removed:** `TestimonialsSection`
   - Deleted entire directory: `/src/screens/Desktop/sections/TestimonialsSection/`
   - Removed from `Desktop.tsx` component imports and rendering
@@ -122,8 +156,9 @@ Comprehensive redesign of the website's section layout, specifically replacing t
 7. ~~PortfolioSection~~ (commented out)
 8. **SignatureSolutions** ✅ (NEW)
 9. **ExpertiseSection** ✅ (NEW)
-10. ContactFooterSection
-11. ContactFormSlider
+10. **WhyHotelsSection** ✅ (NEW)
+11. ContactFooterSection
+12. ContactFormSlider
 
 ---
 

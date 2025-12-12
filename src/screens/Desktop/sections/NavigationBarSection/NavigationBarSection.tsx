@@ -8,7 +8,7 @@ const navigationItems = [
   { label: "SERVICES", href: "#services" },
   // { label: "PORTFOLIO", href: "#portfolio" },
   { label: "SIGNATURE SOLUTIONS", href: "#solutions" },
-  { label: "EXPERTISE", href: "#expertise" },
+  { label: "WHY HOTELS TRUST US", href: "#why-hotels" },
 ];
 
 const scrollToSection = (href: string) => {
