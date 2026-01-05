@@ -164,11 +164,7 @@ export const WhyHotelsSection = (): JSX.Element => {
           </h2>
 
           <p className="font-body-1 text-neutral-2 mt-6 text-base sm:text-lg max-w-2xl leading-relaxed">
-            At Aureus Hospitality, we combine industry expertise, strategic
-            insight, and hands-on experience to help hotels operate smarter,
-            grow faster, and deliver exceptional guest experiences. We don't
-            rely on testimonials—our results, processes, and professionalism
-            earn the trust of every hotel we work with.
+           At Aureus Hospitality, we advise hotels with a refined blend of strategic intelligence, operational mastery, and hands-on hospitality experience. Our work focuses on enhancing performance, elevating guest experience, and unlocking long-term value with discretion and precision. We are trusted by owners and operators who value clarity, rigor, and execution at the highest standard.
           </p>
         </motion.div>
 
