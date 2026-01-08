@@ -18,6 +18,7 @@ interface ContactInfo {
 interface SocialIcon {
   src: string;
   alt: string;
+  href: string;
 }
 
 const contactInfoData: ContactInfo[] = [
@@ -27,7 +28,7 @@ const contactInfoData: ContactInfo[] = [
   },
   {
     label: "Email Us",
-    value: "info@aureus-hospitality.com",
+    value: "aureushospitality2@gmail.com",
   },
   {
     label: "Call Us",
@@ -36,10 +37,9 @@ const contactInfoData: ContactInfo[] = [
 ];
 
 const socialIcons: SocialIcon[] = [
-  { src: "/social-icons-3.svg", alt: "Social icons" },
-  { src: "/social-icons-2.svg", alt: "Social icons" },
-  { src: "/social-icons-1.svg", alt: "Social icons" },
-  { src: "/social-icons.svg", alt: "Social icons" },
+  { src: "/social-icons-3.svg", alt: "Instagram", href: "https://www.instagram.com/aureushospitality/" },
+  { src: "/social-icons-2.svg", alt: "Facebook", href: "" },
+  { src: "/social-icons.svg", alt: "X", href: "https://x.com/Aureus0001" },
 ];
 
 export const ContactFooterSection = (): JSX.Element => {
@@ -134,15 +134,21 @@ export const ContactFooterSection = (): JSX.Element => {
             </div>
 
             {socialIcons.map((icon, index) => (
-              <motion.img
+              <motion.a
                 key={index}
+                href={icon.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.2 }}
-                className="w-10 h-10 cursor-pointer"
-                alt={icon.alt}
-                src={icon.src}
-              />
+              >
+                <img
+                  className="w-10 h-10 cursor-pointer"
+                  alt={icon.alt}
+                  src={icon.src}
+                />
+              </motion.a>
             ))}
           </div>
         </div>
