@@ -38,7 +38,7 @@ const contactInfoData: ContactInfo[] = [
 
 const socialIcons: SocialIcon[] = [
   { src: "/social-icons-3.svg", alt: "Instagram", href: "https://www.instagram.com/aureushospitality/" },
-  { src: "/social-icons-2.svg", alt: "Facebook", href: "" },
+  { src: "/social-icons-2.svg", alt: "Facebook", href: "https://www.facebook.com/people/Aureus-Hospitality/61585948814708/" },
   { src: "/social-icons.svg", alt: "X", href: "https://x.com/Aureus0001" },
 ];
 
@@ -82,6 +82,8 @@ export const ContactFooterSection = (): JSX.Element => {
                 </div>
               ))}
             </div>
+
+
 
             {/* Logo */}
             <motion.div
@@ -156,3 +158,4 @@ export const ContactFooterSection = (): JSX.Element => {
     </footer>
   );
 };
+
